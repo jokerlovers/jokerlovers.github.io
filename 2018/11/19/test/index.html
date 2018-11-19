@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="" class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>dx的python专栏 - Python从入门到放弃</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="nput标签
+1.表单标签：form这个标签是作为一个容器，来收集和提交这个标签中的其他相关标签的数据。一般不会单独使用。action属性：设置提交路径（接口）method属性：设置请求方式（pos,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="dx的python专栏" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+</head>
+</html>
+<body class="loading">
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>十一月 19, 2018</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>nput标签</p>
+<h6 id="1-表单标签：form"><a href="#1-表单标签：form" class="headerlink" title="1.表单标签：form"></a>1.表单标签：form</h6><p>这个标签是作为一个容器，来收集和提交这个标签中的其他相关标签的数据。一般不会单独使用。<br>action属性：设置提交路径（接口）<br>method属性：设置请求方式（post/get）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=&quot;&quot; method=&quot;get&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="2-input标签"><a href="#2-input标签" class="headerlink" title="2.input标签"></a>2.input标签</h6><p>input标签可以单独使用，也可以和from一起使用<br>input标签是单标签<br>type属性：这个值不一样，input的功能就不一样</p>
+<h6 id="2-1文本输入框（type：text）"><a href="#2-1文本输入框（type：text）" class="headerlink" title="2.1文本输入框（type：text）"></a>2.1文本输入框（type：text）</h6><p>type-text<br>type-passworld(密文输入框)<br>name-随便命名，用来对输入的内容进行说明。<br>提交数据的时候以name：value形式进行提交，name值会作为发送请求的参数名，value为参数值。<br>value-指向的就是文本输入框中的内容<br>placeholder-占位符（提示信息）<br>maxlength-限制输入框中的字符个数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot;  name=&quot;username&quot;   id=&quot;&quot; value=&quot;&quot; </span><br><span class="line">placeholder=&quot;用户名&quot; maxlength=&quot;8&quot;/&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;tel&quot; id=&quot;&quot; value=&quot;1231241421&quot; placeholder=&quot;电话号码&quot; /&gt;</span><br><span class="line">&lt;input type=&quot;password&quot; name=&quot;passworld&quot; id=&quot;passworld&quot; value=&quot;&quot; </span><br><span class="line">placeholder=&quot;密码输入&quot; maxlength=&quot;8&quot;   /&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="2-2单选标签"><a href="#2-2单选标签" class="headerlink" title="2.2单选标签"></a>2.2单选标签</h6><p>type=”radio”<br>name-注意：同一类的信息的数据需要设置name值一样，才能做到，选择其中一个让别的取消选择<br>value- 需要设置的值，来告诉别人选中按钮对应的值后者意义<br>cheched-设置默认选中状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;boy&quot; checked=&quot;checked&quot; /&gt;男</span><br><span class="line">&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;girl&quot; /&gt;女</span><br><span class="line">&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;other&quot; /&gt;其他</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;radio&quot; name=&quot;marry&quot; value=&quot;yes&quot; /&gt;已婚</span><br><span class="line">&lt;input type=&quot;radio&quot; name=&quot;marry&quot; value=&quot;no&quot; /&gt;未婚</span><br></pre></td></tr></table></figure>
+<h6 id="2-3复选按钮"><a href="#2-3复选按钮" class="headerlink" title="2.3复选按钮"></a>2.3复选按钮</h6><p>type=”chekbok”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;篮球&quot; /&gt;篮球</span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;兵乓球&quot; /&gt;乒乓球</span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;足球&quot;  checked=&quot;checked&quot;/&gt;足球</span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;羽毛球&quot; /&gt;羽毛球</span><br><span class="line"> &lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;网球&quot; /&gt;网球</span><br></pre></td></tr></table></figure>
+<h6 id="2-4普通按钮"><a href="#2-4普通按钮" class="headerlink" title="2.4普通按钮"></a>2.4普通按钮</h6><p>type=”button”<br>value-设置按钮上显示的文字<br>禁用：disabled=”disabled” 不能选择使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;button&quot; value=&quot;点我啊&quot; disabled=&quot;disabled&quot; /&gt;</span><br><span class="line">&lt;button&gt;点我啊2&lt;/button&gt;</span><br><span class="line"> &lt;button&lt;img src=&quot;../img/1(KM3PWC(3AXEBAW31~FS)V.png&quot;/&gt;&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="2-5提交按钮"><a href="#2-5提交按钮" class="headerlink" title="2.5提交按钮"></a>2.5提交按钮</h6><p>type-submit<br>可以自动提交当前form标签中</p>
+<h6 id="2-6重置按钮"><a href="#2-6重置按钮" class="headerlink" title="2.6重置按钮"></a>2.6重置按钮</h6><p>type=”reset”<br>格式<input type="reset" value"重置"=""><br>value是重置标识</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;reset&quot;  value=&quot;重置&quot;/&gt;</span><br><span class="line">&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;提交&quot; /&gt;</span><br><span class="line"> &lt;input type=&quot;time&quot; name=&quot;时间&quot; id=&quot;&quot; value=&quot;时间1&quot; /&gt;</span><br><span class="line"> &lt;input type=&quot;file&quot; name=&quot;文件2&quot; id=&quot;&quot; value=&quot;文件1&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="二、下拉菜单和多行文本域"><a href="#二、下拉菜单和多行文本域" class="headerlink" title="二、下拉菜单和多行文本域"></a>二、下拉菜单和多行文本域</h1><p>下拉菜单：select-option<br>name-提交的时候用来区分不同的数据<br>value-提交的时候提交具体的数据<br>内容-显示的部分(只能是文字)<br>selected-设置默认选中<br>optgroup 设置下拉的分类，不能选择</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;select name=&quot;city&quot;&gt;</span><br><span class="line">&lt;option value=&quot;成都&quot; selected=&quot;selected&quot;&gt;成都&lt;/option&gt;</span><br><span class="line">&lt;option value=&quot;重庆&quot;&gt;重庆&lt;/option&gt;</span><br><span class="line">&lt;option value=&quot;上海&quot;&gt;上海&lt;/option&gt;</span><br><span class="line">&lt;option value=&quot;北京&quot;&gt;北京&lt;/option&gt;</span><br><span class="line">&lt;option value=&quot;武汉&quot;&gt;武汉&lt;/option&gt;          </span><br><span class="line">&lt;/select&gt;</span><br><span class="line">&lt;select name=&quot;&quot;&gt;</span><br><span class="line">&lt;optgroup label=&quot;四川省&quot;&gt;&lt;/optgroup&gt;</span><br><span class="line">&lt;option value=&quot;成都&quot;&gt;成都&lt;/option&gt;</span><br><span class="line">&lt;option value=&quot;德阳&quot;&gt;德阳&lt;/option&gt;</span><br><span class="line">&lt;option value=&quot;泸州&quot;&gt;泸州&lt;/option&gt;</span><br><span class="line">&lt;optgroup label=&quot;湖南省&quot;&gt;&lt;/optgroup&gt;</span><br><span class="line">&lt;option value=&quot;长沙&quot;&gt;长沙&lt;/option&gt;</span><br><span class="line">&lt;option value=&quot;岳阳&quot;&gt;岳阳&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+<p>2.多行文本域：textarea<br>输入的内容可以显示多行<br>rows-设置一屏最多能显示多少行<br>col-控制一行最多的列数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea name=&quot;&quot; rows=&quot;10&quot; cols=&quot;30&quot;  maxlength=&quot;300&quot; </span><br><span class="line">placeholder=&quot;请输入...&quot; &gt;我的梦想&lt;/textarea</span><br></pre></td></tr></table></figure>
+<h1 id="三、div标签和span"><a href="#三、div标签和span" class="headerlink" title="三、div标签和span"></a>三、div标签和span</h1><p>div和span标签都是无语义标签，一般用来对网页中的标签进行分组和分类用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;&quot;&gt;</span><br><span class="line">        &lt;p id=&quot;2&quot;&gt;你不是真正的&lt;span style=&quot;font-size: 30px;&quot;&gt;快乐&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="四、CSS基础"><a href="#四、CSS基础" class="headerlink" title="四、CSS基础"></a>四、CSS基础</h1><h5 id="1-CSS就是web标准中的表现标准，专门用来对网页标签进行布局和设置样式的一门语言。"><a href="#1-CSS就是web标准中的表现标准，专门用来对网页标签进行布局和设置样式的一门语言。" class="headerlink" title="1.CSS就是web标准中的表现标准，专门用来对网页标签进行布局和设置样式的一门语言。"></a>1.CSS就是web标准中的表现标准，专门用来对网页标签进行布局和设置样式的一门语言。</h5><p>目前一般使用CSS3，CSS又叫样式表<br>常见的CSS属性：<br>color-&gt;设置字体颜色<br>background–color-&gt;背景颜色<br>width-&gt;宽度<br>height-&gt;高度</p>
+<h5 id="2-CSS基本语法"><a href="#2-CSS基本语法" class="headerlink" title="2.CSS基本语法"></a>2.CSS基本语法</h5><p>结构：<br>选择器{属性：属性值；属性2：属性值2；属性3：属性值3…}<br>说明：<br>选择器-用来选中/确定需要设置样式的标签<br>{}-固定写法<br>属性-必须是CSS提供的属性，总共200多个<br>属性值-根据属性赋不同的值，如果属性的值是用来表示大小数字，后面必须加单位。<br>列如：px（像素）、em（空格）</p>
+<p>CSS中的颜色值：<br>a.颜色的英文单词<br>b.颜色值对应的6位16进制值（#ff00,#00ff00)<br>c.rgb(r,g,b) rgba(r,g,b,);r,g,b的取值范围是0-255，a表示透明度，取值范围是0-1<br>属性和属性值之间用冒号隔开，多个属性之间用分号隔开；属性的顺序除特殊情况外是任意的</p>
+<h5 id="3-在哪儿写CSS代码"><a href="#3-在哪儿写CSS代码" class="headerlink" title="3.在哪儿写CSS代码"></a>3.在哪儿写CSS代码</h5><p>内联样式:将样式写在标签的style属性中 —只能对一个标签有效<br>内部样式：将样式表写在head中的style标签—只能作用于当前html有效<br>外部样式:将样式写在外部的css文件中，然后在head中通过link标签导入—可以作用于所有的html文件</p>
+<p>内联样式的优先级最高，内部样式和外部样式谁后写，谁的优先级高—实质写在后面的属性会覆盖前面的属性的值<br>各样式格式与写入的位置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;&lt;/title&gt;</span><br><span class="line">        &lt;!--导入外部样式</span><br><span class="line">            link标签-导入外部文件</span><br><span class="line">            rel属性-说明导入的文件的功能，stylesheet（添加样式表），icon（设置网页图标）</span><br><span class="line">            type属性-对导入的文件类型进行说明：文件类型/文件后缀</span><br><span class="line">            href属性-导入文件的地址</span><br><span class="line">        --&gt;</span><br><span class="line">         &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;CSS基础.css&quot;/&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--内部样式--&gt;</span><br><span class="line">        &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">            /*这儿写的代码是CSS代码*/</span><br><span class="line">            p&#123;</span><br><span class="line">                color: green;</span><br><span class="line">            &#125;</span><br><span class="line">            h1&#123;</span><br><span class="line">                /*设置字体大小*/</span><br><span class="line">                font-size: 20;</span><br><span class="line">                /*设置背景颜色*/</span><br><span class="line">                background: lawngreen;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;p&quot;&gt;我是第一个段落&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;我是第二个段落&lt;/p&gt;</span><br><span class="line">        &lt;h1&gt;我是标题&lt;/h1&gt;</span><br><span class="line">        &lt;p style=&quot;background: #000000;&quot;&gt;这是内联样式&lt;/p&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="四、CSS选择器"><a href="#四、CSS选择器" class="headerlink" title="四、CSS选择器"></a>四、CSS选择器</h1><h6 id="什么是选择器"><a href="#什么是选择器" class="headerlink" title="什么是选择器"></a>什么是选择器</h6><p>选择器{属性1：属性值1；…}<br>选择器-选中需要添加样式的标签<br>常见的选择器：元素选择器、id选择器、class选择器、群组选择器、父子选择器</p>
+<p>1.元素选择器：将标签名作为选择器，选中指定的标签。<br>用法：标签名{}<br>2.id选择器：将标签中的id属性的值作为选择器，选择id值对应的标签<br>用法：#id值{}<br>3.class选择器：将标签中的class属性的值作为选择器，选中class值对应的标签<br>用法：.class值{}<br>4.群组选择器：多个选择器用逗号隔开作为一个选择器，同时选中所有选择器对应的标签<br>a,p{}–选中所有的a标签和p标签<br>.p1,img–选中所有class值为p1的标签和img标签<br>.p2,#p3,.p4–选中所有的id值是p3，class是p4h和p4的标签<br>5.父子选择器：多个选择器用空格隔开作为一个选择器，按顺序依次往后找，找到最后一层选择器对应的标签<br>div div p{}选中div里的div里的p标签</p>
+<h1 id="六、伪类选择器"><a href="#六、伪类选择器" class="headerlink" title="六、伪类选择器"></a>六、伪类选择器</h1><h6 id="伪类选择器是选中某个标签的不同的状态，可以给不同状态设置不同的样式"><a href="#伪类选择器是选中某个标签的不同的状态，可以给不同状态设置不同的样式" class="headerlink" title="伪类选择器是选中某个标签的不同的状态，可以给不同状态设置不同的样式"></a>伪类选择器是选中某个标签的不同的状态，可以给不同状态设置不同的样式</h6><p>1.link<br>标签：link{}-选中初始状态 (a标签的初始状态指的是a对应的网址一次都没有访问成功的时候对应的状态)<br>列如：a:link{};p:link{};.a2:link{}<br>2.visited：访问后的状态<br>3.hover:鼠标放在a标签上面的状态<br>4.active：鼠标按住不放时对应的状态</p>
+<p>注意：使用伪类选择器的时候要遵守爱恨原则（lovehate),如果不遵守可能会导致某些状态的样式无效</p>
+<h6 id="选择器的优先级：权重值越大，优先级越高"><a href="#选择器的优先级：权重值越大，优先级越高" class="headerlink" title="选择器的优先级：权重值越大，优先级越高"></a>选择器的优先级：权重值越大，优先级越高</h6><p>元素选择器的权重值：0001–1<br>class选择器权重：0010–2<br>id选择器权重：0100–4<br>伪类选择器权重：0001–1<br>群组选择器的权重：单独看每个选择器的权重<br>父子选择器权重值：所有的选择器的权重值之和<br>如果权重值相同，后写的优先级高于先写的<br>内联样式的优先级是最高的，不用管权重值，内联样式优先级大于内部样式</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="" data-cs="" data-r="" data-o="" data-a="" data-d="false">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
